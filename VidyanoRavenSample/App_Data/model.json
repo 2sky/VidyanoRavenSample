@@ -1,0 +1,2432 @@
+{
+  "Actions": {
+    "AddReference": {
+      "RefreshQueryOnCompleted": true,
+      "Offset": 300,
+      "ShowedOn": 2,
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Add"
+      },
+      "IconName": "Add"
+    },
+    "BulkEdit": {
+      "Offset": 400,
+      "ShowedOn": 2,
+      "IsSystem": true,
+      "SelectionRule": ">0",
+      "DisplayName": {
+        "en": "Edit"
+      },
+      "IconName": "Edit"
+    },
+    "CancelEdit": {
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Cancel"
+      },
+      "IconName": "CancelEdit"
+    },
+    "CancelSave": {
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Cancel"
+      },
+      "IconName": "Cancel"
+    },
+    "Delete": {
+      "RefreshQueryOnCompleted": true,
+      "Offset": 500,
+      "ShowedOn": 2,
+      "IsSystem": true,
+      "SelectionRule": ">0",
+      "DisplayName": {
+        "en": "Delete"
+      },
+      "ConfirmationMessageKey": "AskForDeleteItems",
+      "IconName": "Delete"
+    },
+    "DialogCancel": {
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Cancel"
+      },
+      "IconName": "Cancel"
+    },
+    "DialogOk": {
+      "IsSystem": true,
+      "SelectionRule": "> 0",
+      "DisplayName": {
+        "en": "OK"
+      },
+      "IconName": "Ok"
+    },
+    "Edit": {
+      "Offset": 100,
+      "ShowedOn": 5,
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Edit"
+      },
+      "IconName": "Edit"
+    },
+    "EndEdit": {
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Save"
+      },
+      "IconName": "Save"
+    },
+    "ExportToCsv": {
+      "Offset": 30001,
+      "ShowedOn": 2,
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Export"
+      },
+      "IconName": "Excel"
+    },
+    "ExportToExcel": {
+      "Offset": 30000,
+      "ShowedOn": 2,
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Export"
+      },
+      "IconName": "Excel"
+    },
+    "New": {
+      "Offset": 200,
+      "ShowedOn": 2,
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "New"
+      },
+      "IconName": "Add"
+    },
+    "Remove": {
+      "RefreshQueryOnCompleted": true,
+      "Offset": 600,
+      "ShowedOn": 2,
+      "IsSystem": true,
+      "SelectionRule": ">0",
+      "DisplayName": {
+        "en": "Remove"
+      },
+      "IconName": "Remove"
+    },
+    "Save": {
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Save"
+      },
+      "IconName": "Save"
+    },
+    "ShowHelp": {
+      "Offset": 60000,
+      "ShowedOn": 7,
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Help"
+      },
+      "IsPinned": true,
+      "IconName": "Help"
+    },
+    "viSearch": {
+      "Offset": 1500,
+      "ShowedOn": 2,
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Search"
+      },
+      "IsPinned": true,
+      "IconName": "Filter"
+    },
+    "viSaveAdvancedSearch": {
+      "Offset": 1600,
+      "ShowedOn": 2,
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Save"
+      },
+      "IconName": "Save"
+    },
+    "viLoadAdvancedSearch": {
+      "Offset": 1600,
+      "ShowedOn": 2,
+      "IsSystem": true,
+      "DisplayName": {
+        "en": "Load"
+      },
+      "IconName": "Add"
+    }
+  },
+  "DataTypes": {
+    "AsDetail": {
+      "$id": "DataType:AsDetail",
+      "IsSystem": true,
+      "CanSort": false,
+      "CanFilter": false,
+      "CanListDistincts": false
+    },
+    "BinaryFile": {
+      "$id": "DataType:BinaryFile",
+      "IsSystem": true,
+      "CanSort": false,
+      "CanFilter": false,
+      "CanListDistincts": false
+    },
+    "Boolean": {
+      "$id": "DataType:Boolean",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "Byte": {
+      "$id": "DataType:Byte",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "ComboBox": {
+      "$id": "DataType:ComboBox",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "CommonMark": {
+      "$id": "DataType:CommonMark",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "Date": {
+      "$id": "DataType:Date",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "DateTime": {
+      "$id": "DataType:DateTime",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "DateTimeOffset": {
+      "$id": "DataType:DateTimeOffset",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "Decimal": {
+      "$id": "DataType:Decimal",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "Double": {
+      "$id": "DataType:Double",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "DropDown": {
+      "$id": "DataType:DropDown",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "Enum": {
+      "$id": "DataType:Enum",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "FlagsEnum": {
+      "$id": "DataType:FlagsEnum",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "Geography": {
+      "$id": "DataType:Geography",
+      "IsSystem": true,
+      "CanSort": false,
+      "CanFilter": true,
+      "CanListDistincts": false
+    },
+    "Guid": {
+      "$id": "DataType:Guid",
+      "IsSystem": true,
+      "CanSort": false,
+      "CanFilter": false,
+      "CanListDistincts": false
+    },
+    "Image": {
+      "$id": "DataType:Image",
+      "IsSystem": true,
+      "CanSort": false,
+      "CanFilter": false,
+      "CanListDistincts": false
+    },
+    "Int16": {
+      "$id": "DataType:Int16",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "Int32": {
+      "$id": "DataType:Int32",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "Int64": {
+      "$id": "DataType:Int64",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "KeyValueList": {
+      "$id": "DataType:KeyValueList",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "MultiLineString": {
+      "$id": "DataType:MultiLineString",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "MultiString": {
+      "$id": "DataType:MultiString",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableBoolean": {
+      "$id": "DataType:NullableBoolean",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableByte": {
+      "$id": "DataType:NullableByte",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableDate": {
+      "$id": "DataType:NullableDate",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableDateTime": {
+      "$id": "DataType:NullableDateTime",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableDateTimeOffset": {
+      "$id": "DataType:NullableDateTimeOffset",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableDecimal": {
+      "$id": "DataType:NullableDecimal",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableDouble": {
+      "$id": "DataType:NullableDouble",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableGuid": {
+      "$id": "DataType:NullableGuid",
+      "IsSystem": true,
+      "CanSort": false,
+      "CanFilter": false,
+      "CanListDistincts": false
+    },
+    "NullableInt16": {
+      "$id": "DataType:NullableInt16",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableInt32": {
+      "$id": "DataType:NullableInt32",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableInt64": {
+      "$id": "DataType:NullableInt64",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableSByte": {
+      "$id": "DataType:NullableSByte",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableSingle": {
+      "$id": "DataType:NullableSingle",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableTime": {
+      "$id": "DataType:NullableTime",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableUInt16": {
+      "$id": "DataType:NullableUInt16",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableUInt32": {
+      "$id": "DataType:NullableUInt32",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableUInt64": {
+      "$id": "DataType:NullableUInt64",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "NullableUser": {
+      "$id": "DataType:NullableUser",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "Password": {
+      "$id": "DataType:Password",
+      "IsSystem": true,
+      "CanSort": false,
+      "CanFilter": false,
+      "CanListDistincts": false
+    },
+    "Reference": {
+      "$id": "DataType:Reference",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "SByte": {
+      "$id": "DataType:SByte",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "Single": {
+      "$id": "DataType:Single",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": false,
+      "CanListDistincts": true
+    },
+    "String": {
+      "$id": "DataType:String",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "Time": {
+      "$id": "DataType:Time",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "TranslatedString": {
+      "$id": "DataType:TranslatedString",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "UInt16": {
+      "$id": "DataType:UInt16",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "UInt32": {
+      "$id": "DataType:UInt32",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "UInt64": {
+      "$id": "DataType:UInt64",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "User": {
+      "$id": "DataType:User",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
+    "YesNo": {
+      "$id": "DataType:YesNo",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    }
+  },
+  "Schemas": {
+    "VidyanoRavenSample": {
+      "PersistentObjects": {
+        "81b6bd8b-6dd0-3e62-af13-06fa851cdebe": {
+          "$id": "PersistentObject:81b6bd8b-6dd0-3e62-af13-06fa851cdebe",
+          "SchemaName": "VidyanoRavenSample",
+          "Type": "Address",
+          "Salt": "Yhg1cLXDtKClHH4lgW-kSxVR8yykK3iyrLcodP2Xv9HfKf2tr4MZwQ",
+          "Label": {
+            "en": "Address"
+          },
+          "Groups": [
+            {
+              "$id": "PersistentObjectAttributeGroup:41888219-59d2-4b19-b3e1-d77fc7dccff0",
+              "Id": "41888219-59d2-4b19-b3e1-d77fc7dccff0"
+            }
+          ],
+          "Tabs": [
+            {
+              "$id": "PersistentObjectAttributeTab:a7842d6d-05ba-41a1-b281-66e82ada6128",
+              "Id": "a7842d6d-05ba-41a1-b281-66e82ada6128"
+            }
+          ],
+          "Attributes": [
+            {
+              "$id": "PersistentObjectAttribute:1bfe6f6c-3dcb-37c4-a4e7-1084158e1a83",
+              "Id": "1bfe6f6c-3dcb-37c4-a4e7-1084158e1a83",
+              "Offset": 30,
+              "Rules": "NotEmpty",
+              "Name": "City",
+              "Label": {
+                "en": "City"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:41888219-59d2-4b19-b3e1-d77fc7dccff0"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:a7842d6d-05ba-41a1-b281-66e82ada6128"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:32522424-0737-355d-b32e-18ca2455fe35",
+              "Id": "32522424-0737-355d-b32e-18ca2455fe35",
+              "Offset": 60,
+              "Rules": "NotEmpty",
+              "Name": "Country",
+              "Label": {
+                "en": "Country"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:41888219-59d2-4b19-b3e1-d77fc7dccff0"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:a7842d6d-05ba-41a1-b281-66e82ada6128"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:60f3a37a-5528-3f77-b729-52c7aa8b3330",
+              "Id": "60f3a37a-5528-3f77-b729-52c7aa8b3330",
+              "Offset": 10,
+              "Rules": "NotEmpty",
+              "Name": "Line1",
+              "Label": {
+                "en": "Line1"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:41888219-59d2-4b19-b3e1-d77fc7dccff0"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:a7842d6d-05ba-41a1-b281-66e82ada6128"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:db820f14-bdb9-341a-b09e-aaebee7665fe",
+              "Id": "db820f14-bdb9-341a-b09e-aaebee7665fe",
+              "Offset": 20,
+              "Name": "Line2",
+              "Label": {
+                "en": "Line2"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:41888219-59d2-4b19-b3e1-d77fc7dccff0"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:a7842d6d-05ba-41a1-b281-66e82ada6128"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:f860bbfc-333e-3e41-9cf5-4be659233531",
+              "Id": "f860bbfc-333e-3e41-9cf5-4be659233531",
+              "Offset": 50,
+              "Rules": "NotEmpty",
+              "Name": "PostalCode",
+              "Label": {
+                "en": "Postal code"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:41888219-59d2-4b19-b3e1-d77fc7dccff0"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:a7842d6d-05ba-41a1-b281-66e82ada6128"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:2b61ce16-94a5-32c5-b33b-90f5cada2530",
+              "Id": "2b61ce16-94a5-32c5-b33b-90f5cada2530",
+              "Offset": 40,
+              "Name": "Region",
+              "Label": {
+                "en": "Region"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:41888219-59d2-4b19-b3e1-d77fc7dccff0"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:a7842d6d-05ba-41a1-b281-66e82ada6128"
+              }
+            }
+          ],
+          "Queries": []
+        },
+        "3f97b417-3044-394b-b32f-6caca542b7c4": {
+          "$id": "PersistentObject:3f97b417-3044-394b-b32f-6caca542b7c4",
+          "SchemaName": "VidyanoRavenSample",
+          "Type": "Category",
+          "Salt": "UjuIS_o0qbGAyOJ_TeG7H1zaxsDQMbzL_MwijetCaTevDMueqKOnXA",
+          "Breadcrumb": "{Description}",
+          "ContextProperty": "Categories",
+          "Label": {
+            "en": "Category"
+          },
+          "Groups": [
+            {
+              "$id": "PersistentObjectAttributeGroup:6967887c-3c4b-4bbb-9f2e-254b4f9bf633",
+              "Id": "6967887c-3c4b-4bbb-9f2e-254b4f9bf633"
+            }
+          ],
+          "Tabs": [
+            {
+              "$id": "PersistentObjectAttributeTab:5c78d6b8-4586-4c06-bc45-32010ed945c1",
+              "Id": "5c78d6b8-4586-4c06-bc45-32010ed945c1"
+            }
+          ],
+          "Attributes": [
+            {
+              "$id": "PersistentObjectAttribute:b7191963-836e-36d1-b7ae-ea85c7dcd628",
+              "Id": "b7191963-836e-36d1-b7ae-ea85c7dcd628",
+              "Offset": 20,
+              "Rules": "NotEmpty",
+              "Name": "Description",
+              "Label": {
+                "en": "Description"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:6967887c-3c4b-4bbb-9f2e-254b4f9bf633"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:5c78d6b8-4586-4c06-bc45-32010ed945c1"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:11d2449d-cf1d-3e4c-928e-857ec92c982b",
+              "Id": "11d2449d-cf1d-3e4c-928e-857ec92c982b",
+              "Offset": 10,
+              "Rules": "NotEmpty",
+              "Name": "Name",
+              "Label": {
+                "en": "Name"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:6967887c-3c4b-4bbb-9f2e-254b4f9bf633"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:5c78d6b8-4586-4c06-bc45-32010ed945c1"
+              }
+            }
+          ],
+          "Queries": []
+        },
+        "5ba00ff9-5705-3605-88e3-f4297b6ba7b3": {
+          "$id": "PersistentObject:5ba00ff9-5705-3605-88e3-f4297b6ba7b3",
+          "SchemaName": "VidyanoRavenSample",
+          "Type": "Company",
+          "Salt": "OOEUC7EdTcy8gY4JZivL1TWj8O6S0q7CGuBj1ptEiY0p5xkEe3NSQQ",
+          "Breadcrumb": "{Name}",
+          "ContextProperty": "Companies",
+          "Label": {
+            "en": "Company"
+          },
+          "Groups": [
+            {
+              "$id": "PersistentObjectAttributeGroup:c80e98ae-80da-4107-8697-c9df929db046",
+              "Id": "c80e98ae-80da-4107-8697-c9df929db046"
+            }
+          ],
+          "Tabs": [
+            {
+              "$id": "PersistentObjectAttributeTab:dd178729-1e33-4c79-84d3-2dd19ea27955",
+              "Id": "dd178729-1e33-4c79-84d3-2dd19ea27955"
+            }
+          ],
+          "Attributes": [
+            {
+              "$id": "PersistentObjectAttribute:4e36b508-6a14-334b-a954-9c29934744a2",
+              "Id": "4e36b508-6a14-334b-a954-9c29934744a2",
+              "Offset": 40,
+              "Name": "Address",
+              "Label": {
+                "en": "Address"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:c80e98ae-80da-4107-8697-c9df929db046"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:dd178729-1e33-4c79-84d3-2dd19ea27955"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:65a543a0-f9ec-3fa0-9be1-a38ee5b658bb",
+              "Id": "65a543a0-f9ec-3fa0-9be1-a38ee5b658bb",
+              "Offset": 30,
+              "Name": "Contact",
+              "Label": {
+                "en": "Contact"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:c80e98ae-80da-4107-8697-c9df929db046"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:dd178729-1e33-4c79-84d3-2dd19ea27955"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:eff4818b-7452-33a5-a1d5-0999322bc6af",
+              "Id": "eff4818b-7452-33a5-a1d5-0999322bc6af",
+              "Offset": 80,
+              "Name": "ExternalId",
+              "Label": {
+                "en": "External id"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:c80e98ae-80da-4107-8697-c9df929db046"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:dd178729-1e33-4c79-84d3-2dd19ea27955"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:65c8d67f-c724-3761-b150-07f42b412404",
+              "Id": "65c8d67f-c724-3761-b150-07f42b412404",
+              "Offset": 60,
+              "Name": "Fax",
+              "Label": {
+                "en": "Fax"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:c80e98ae-80da-4107-8697-c9df929db046"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:dd178729-1e33-4c79-84d3-2dd19ea27955"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:9776f5f3-c844-375a-b201-dafb7b94c26b",
+              "Id": "9776f5f3-c844-375a-b201-dafb7b94c26b",
+              "Offset": 20,
+              "Rules": "NotEmpty",
+              "Name": "Name",
+              "Label": {
+                "en": "Name"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:c80e98ae-80da-4107-8697-c9df929db046"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:dd178729-1e33-4c79-84d3-2dd19ea27955"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:41c0e3a2-96d6-3ea4-8a93-8ae17f1df6b3",
+              "Id": "41c0e3a2-96d6-3ea4-8a93-8ae17f1df6b3",
+              "Offset": 50,
+              "Name": "Phone",
+              "Label": {
+                "en": "Phone"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:c80e98ae-80da-4107-8697-c9df929db046"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:dd178729-1e33-4c79-84d3-2dd19ea27955"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:c04d5487-f066-3658-9ac9-6a81e68b11ce",
+              "Id": "c04d5487-f066-3658-9ac9-6a81e68b11ce",
+              "Offset": 70,
+              "Name": "State",
+              "Label": {
+                "en": "State"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:Enum"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:c80e98ae-80da-4107-8697-c9df929db046"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:dd178729-1e33-4c79-84d3-2dd19ea27955"
+              }
+            }
+          ],
+          "Queries": []
+        },
+        "5a2c0f28-97de-3bae-8c53-38e784fae6af": {
+          "$id": "PersistentObject:5a2c0f28-97de-3bae-8c53-38e784fae6af",
+          "SchemaName": "VidyanoRavenSample",
+          "Type": "Contact",
+          "Salt": "OrFrka4envBSw2HTpWJPpaPTPnDNW_TYY_lq6JO-nKQpuNNBHUzASg",
+          "Label": {
+            "en": "Contact"
+          },
+          "Groups": [
+            {
+              "$id": "PersistentObjectAttributeGroup:71b87560-0c6e-4dad-b365-d4a56f35cc06",
+              "Id": "71b87560-0c6e-4dad-b365-d4a56f35cc06"
+            }
+          ],
+          "Tabs": [
+            {
+              "$id": "PersistentObjectAttributeTab:48d79eac-e58d-403c-9a17-df1d72ae3fed",
+              "Id": "48d79eac-e58d-403c-9a17-df1d72ae3fed"
+            }
+          ],
+          "Attributes": [
+            {
+              "$id": "PersistentObjectAttribute:c0260ebd-8482-3511-89cd-b25f75eb1c3f",
+              "Id": "c0260ebd-8482-3511-89cd-b25f75eb1c3f",
+              "Offset": 10,
+              "Rules": "NotEmpty",
+              "Name": "Name",
+              "Label": {
+                "en": "Name"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:71b87560-0c6e-4dad-b365-d4a56f35cc06"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:48d79eac-e58d-403c-9a17-df1d72ae3fed"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:9de84eed-2494-381d-8538-0e9bd61cdf6e",
+              "Id": "9de84eed-2494-381d-8538-0e9bd61cdf6e",
+              "Offset": 20,
+              "Rules": "NotEmpty",
+              "Name": "Title",
+              "Label": {
+                "en": "Title"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:71b87560-0c6e-4dad-b365-d4a56f35cc06"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:48d79eac-e58d-403c-9a17-df1d72ae3fed"
+              }
+            }
+          ],
+          "Queries": []
+        },
+        "83e6b167-1dde-3372-a1f8-f9bdd08eb634": {
+          "$id": "PersistentObject:83e6b167-1dde-3372-a1f8-f9bdd08eb634",
+          "SchemaName": "VidyanoRavenSample",
+          "Type": "Employee",
+          "Salt": "240ikG_VcGLhpNPuS__Fajx8sr9EwQMR0N77ZJFDwgT6DmN8e-ktqg",
+          "Breadcrumb": "{Address}",
+          "ContextProperty": "Employees",
+          "Label": {
+            "en": "Employee"
+          },
+          "Groups": [
+            {
+              "$id": "PersistentObjectAttributeGroup:d5870b3a-c8d2-44a1-aa2d-035d234cceeb",
+              "Id": "d5870b3a-c8d2-44a1-aa2d-035d234cceeb"
+            }
+          ],
+          "Tabs": [
+            {
+              "$id": "PersistentObjectAttributeTab:303367c4-094d-4e4e-b653-9faed3e82242",
+              "Id": "303367c4-094d-4e4e-b653-9faed3e82242"
+            }
+          ],
+          "Attributes": [
+            {
+              "$id": "PersistentObjectAttribute:376577b9-520b-3cd5-83e6-3587a103788b",
+              "Id": "376577b9-520b-3cd5-83e6-3587a103788b",
+              "Offset": 40,
+              "Rules": "Required",
+              "Name": "Address",
+              "Label": {
+                "en": "Address"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:d5870b3a-c8d2-44a1-aa2d-035d234cceeb"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:303367c4-094d-4e4e-b653-9faed3e82242"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:83386f68-bcde-31fe-877f-c55fc4abaed9",
+              "Id": "83386f68-bcde-31fe-877f-c55fc4abaed9",
+              "Offset": 60,
+              "Rules": "Required",
+              "Name": "Birthday",
+              "Label": {
+                "en": "Birthday"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:Date"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:d5870b3a-c8d2-44a1-aa2d-035d234cceeb"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:303367c4-094d-4e4e-b653-9faed3e82242"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:3ecb52ce-ec7c-3ce5-82b7-ce0fa3911b9c",
+              "Id": "3ecb52ce-ec7c-3ce5-82b7-ce0fa3911b9c",
+              "Offset": 80,
+              "Rules": "NotEmpty",
+              "Name": "Extension",
+              "Label": {
+                "en": "Extension"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:d5870b3a-c8d2-44a1-aa2d-035d234cceeb"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:303367c4-094d-4e4e-b653-9faed3e82242"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:1ffaa6a8-2151-38ab-8018-ef84b12a76cf",
+              "Id": "1ffaa6a8-2151-38ab-8018-ef84b12a76cf",
+              "Offset": 20,
+              "Rules": "NotEmpty",
+              "Name": "FirstName",
+              "Label": {
+                "en": "First name"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:d5870b3a-c8d2-44a1-aa2d-035d234cceeb"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:303367c4-094d-4e4e-b653-9faed3e82242"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:52a71044-dff7-3643-8de9-4b5ef87fa857",
+              "Id": "52a71044-dff7-3643-8de9-4b5ef87fa857",
+              "Offset": 50,
+              "Rules": "Required",
+              "Name": "HiredAt",
+              "Label": {
+                "en": "Hired at"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:Date"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:d5870b3a-c8d2-44a1-aa2d-035d234cceeb"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:303367c4-094d-4e4e-b653-9faed3e82242"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:40448ce9-c6a7-370c-b3ef-403ee8c83436",
+              "Id": "40448ce9-c6a7-370c-b3ef-403ee8c83436",
+              "Offset": 70,
+              "Rules": "NotEmpty",
+              "Name": "HomePhone",
+              "Label": {
+                "en": "Home phone"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:d5870b3a-c8d2-44a1-aa2d-035d234cceeb"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:303367c4-094d-4e4e-b653-9faed3e82242"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:71814cbe-9fcf-33dc-bddd-d2d9f9ffddbf",
+              "Id": "71814cbe-9fcf-33dc-bddd-d2d9f9ffddbf",
+              "Offset": 10,
+              "Rules": "NotEmpty",
+              "Name": "LastName",
+              "Label": {
+                "en": "Last name"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:d5870b3a-c8d2-44a1-aa2d-035d234cceeb"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:303367c4-094d-4e4e-b653-9faed3e82242"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:d66160f8-3c21-3633-88f7-31d31d948128",
+              "Id": "d66160f8-3c21-3633-88f7-31d31d948128",
+              "Offset": 90,
+              "Rules": "Required",
+              "Name": "Notes",
+              "Label": {
+                "en": "Notes"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:MultiLineString"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:d5870b3a-c8d2-44a1-aa2d-035d234cceeb"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:303367c4-094d-4e4e-b653-9faed3e82242"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttributeWithReference:6a611ce1-0aa3-388c-b810-dfca3ce6fc56",
+              "$type": "Vidyano.Service.Repository.PersistentObjectAttributeWithReference, Vidyano.Service",
+              "DisplayAttribute": "FirstName",
+              "LookupId": "bae3b276-b534-439f-b5d4-317363b7ff46",
+              "Id": "6a611ce1-0aa3-388c-b810-dfca3ce6fc56",
+              "Offset": 110,
+              "Name": "ReportsTo",
+              "Label": {
+                "en": "Reports to"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:Reference"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:d5870b3a-c8d2-44a1-aa2d-035d234cceeb"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:303367c4-094d-4e4e-b653-9faed3e82242"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:0f32ebef-1109-3526-9836-c7c9c1e6fecc",
+              "Id": "0f32ebef-1109-3526-9836-c7c9c1e6fecc",
+              "Offset": 100,
+              "Rules": "Required",
+              "Name": "Territories",
+              "Label": {
+                "en": "Territories"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:MultiString"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:d5870b3a-c8d2-44a1-aa2d-035d234cceeb"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:303367c4-094d-4e4e-b653-9faed3e82242"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:cc1483d7-6f86-324a-b7fc-8b61c150827f",
+              "Id": "cc1483d7-6f86-324a-b7fc-8b61c150827f",
+              "Offset": 30,
+              "Rules": "NotEmpty",
+              "Name": "Title",
+              "Label": {
+                "en": "Title"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:d5870b3a-c8d2-44a1-aa2d-035d234cceeb"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:303367c4-094d-4e4e-b653-9faed3e82242"
+              }
+            }
+          ],
+          "Queries": []
+        },
+        "eb6be7f4-1974-323e-a3e3-8771925b250d": {
+          "$id": "PersistentObject:eb6be7f4-1974-323e-a3e3-8771925b250d",
+          "SchemaName": "VidyanoRavenSample",
+          "Type": "GettingStarted",
+          "Salt": "LU7GxxHjrm8LgWTtVzkatdO8IcIttMo1slgKQeYdygfJCByhudpxqg",
+          "Breadcrumb": "Getting started",
+          "QueryLayoutMode": 2,
+          "Groups": [
+            {
+              "$id": "PersistentObjectAttributeGroup:21a01b90-2730-4e86-b7ce-9210b91405c6",
+              "Id": "21a01b90-2730-4e86-b7ce-9210b91405c6"
+            }
+          ],
+          "Tabs": [
+            {
+              "$id": "PersistentObjectAttributeTab:395784ee-10c5-4eac-9b35-0f86ed5fa72b",
+              "Id": "395784ee-10c5-4eac-9b35-0f86ed5fa72b"
+            }
+          ],
+          "Attributes": [
+            {
+              "$id": "PersistentObjectAttribute:613be021-c948-3e34-94de-b268df4bee38",
+              "Id": "613be021-c948-3e34-94de-b268df4bee38",
+              "Offset": 10,
+              "Name": "Contents",
+              "IsReadOnly": true,
+              "DataTypeHints": "",
+              "Label": {
+                "en": "Contents"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 4,
+              "DataType": {
+                "$ref": "DataType:CommonMark"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:21a01b90-2730-4e86-b7ce-9210b91405c6"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:395784ee-10c5-4eac-9b35-0f86ed5fa72b"
+              }
+            }
+          ],
+          "Queries": []
+        },
+        "e61fba6b-ef58-3404-90d6-5977d1ad52e1": {
+          "$id": "PersistentObject:e61fba6b-ef58-3404-90d6-5977d1ad52e1",
+          "SchemaName": "VidyanoRavenSample",
+          "Type": "Order",
+          "Salt": "Mv_C2wT4-x5-Oe2oHsgodYUhqZ60cRsASriKKOKtd9uCLrDl4Y0WCA",
+          "Breadcrumb": "{ShipTo}",
+          "ContextProperty": "Orders",
+          "Label": {
+            "en": "Order"
+          },
+          "Groups": [
+            {
+              "$id": "PersistentObjectAttributeGroup:61b16903-315f-45a6-8e70-a2d4c51dac93",
+              "Id": "61b16903-315f-45a6-8e70-a2d4c51dac93"
+            }
+          ],
+          "Tabs": [
+            {
+              "$id": "PersistentObjectAttributeTab:66d87872-75f6-411d-a43e-bd298ff3a456",
+              "Id": "66d87872-75f6-411d-a43e-bd298ff3a456"
+            }
+          ],
+          "Attributes": [
+            {
+              "$id": "PersistentObjectAttributeWithReference:4b92d836-2d39-3e06-b943-8f56563b9e8e",
+              "$type": "Vidyano.Service.Repository.PersistentObjectAttributeWithReference, Vidyano.Service",
+              "DisplayAttribute": "Name",
+              "LookupId": "2d576fa0-3325-403d-9bd4-4cfec913fd2b",
+              "Id": "4b92d836-2d39-3e06-b943-8f56563b9e8e",
+              "Offset": 60,
+              "Name": "Company",
+              "Label": {
+                "en": "Company"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:Reference"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:61b16903-315f-45a6-8e70-a2d4c51dac93"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:66d87872-75f6-411d-a43e-bd298ff3a456"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttributeWithReference:ab50b7dc-c553-39b1-9fea-33d8b6ea3128",
+              "$type": "Vidyano.Service.Repository.PersistentObjectAttributeWithReference, Vidyano.Service",
+              "DisplayAttribute": "Address",
+              "LookupId": "bae3b276-b534-439f-b5d4-317363b7ff46",
+              "Id": "ab50b7dc-c553-39b1-9fea-33d8b6ea3128",
+              "Offset": 70,
+              "Name": "Employee",
+              "Label": {
+                "en": "Employee"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:Reference"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:61b16903-315f-45a6-8e70-a2d4c51dac93"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:66d87872-75f6-411d-a43e-bd298ff3a456"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:268ed624-d32c-3630-9727-bec80cd35a16",
+              "Id": "268ed624-d32c-3630-9727-bec80cd35a16",
+              "Offset": 50,
+              "Rules": "Required",
+              "Name": "Freight",
+              "Label": {
+                "en": "Freight"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:Decimal"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:61b16903-315f-45a6-8e70-a2d4c51dac93"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:66d87872-75f6-411d-a43e-bd298ff3a456"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:4087e1ca-e71e-3897-825c-6886fc4c210b",
+              "Id": "4087e1ca-e71e-3897-825c-6886fc4c210b",
+              "Offset": 10,
+              "Rules": "Required",
+              "Name": "OrderedAt",
+              "Label": {
+                "en": "Ordered at"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:DateTime"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:61b16903-315f-45a6-8e70-a2d4c51dac93"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:66d87872-75f6-411d-a43e-bd298ff3a456"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:68660f56-4850-3576-b40a-53132d7501cf",
+              "Id": "68660f56-4850-3576-b40a-53132d7501cf",
+              "Offset": 20,
+              "Rules": "Required",
+              "Name": "RequireAt",
+              "Label": {
+                "en": "Require at"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:DateTime"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:61b16903-315f-45a6-8e70-a2d4c51dac93"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:66d87872-75f6-411d-a43e-bd298ff3a456"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:e11e8d1a-ee18-32b8-ac44-2736060bab69",
+              "Id": "e11e8d1a-ee18-32b8-ac44-2736060bab69",
+              "Offset": 30,
+              "Name": "ShippedAt",
+              "Label": {
+                "en": "Shipped at"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:NullableDateTime"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:61b16903-315f-45a6-8e70-a2d4c51dac93"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:66d87872-75f6-411d-a43e-bd298ff3a456"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:7d05f337-973a-38ff-b9cc-bb782a33b0ba",
+              "Id": "7d05f337-973a-38ff-b9cc-bb782a33b0ba",
+              "Offset": 40,
+              "Name": "ShipTo",
+              "Label": {
+                "en": "Ship to"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:61b16903-315f-45a6-8e70-a2d4c51dac93"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:66d87872-75f6-411d-a43e-bd298ff3a456"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttributeWithReference:c64a4ea5-aa15-3a5b-8551-0b52cfc85270",
+              "$type": "Vidyano.Service.Repository.PersistentObjectAttributeWithReference, Vidyano.Service",
+              "DisplayAttribute": "Name",
+              "LookupId": "b425a21b-1cf0-44d9-9964-5c11c028d8e7",
+              "Id": "c64a4ea5-aa15-3a5b-8551-0b52cfc85270",
+              "Offset": 80,
+              "Name": "ShipVia",
+              "Label": {
+                "en": "Ship via"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:Reference"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:61b16903-315f-45a6-8e70-a2d4c51dac93"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:66d87872-75f6-411d-a43e-bd298ff3a456"
+              }
+            }
+          ],
+          "Queries": []
+        },
+        "f3c4179d-c383-3fc6-86ad-04f6d71f2f4f": {
+          "$id": "PersistentObject:f3c4179d-c383-3fc6-86ad-04f6d71f2f4f",
+          "SchemaName": "VidyanoRavenSample",
+          "Type": "Product",
+          "Salt": "d_bsyzfxDkwWjG0xGChlrBfTCRdAxtQSvWekFG_W-hsvRKbiPdz6bQ",
+          "Breadcrumb": "{Name}",
+          "ContextProperty": "Products",
+          "Label": {
+            "en": "Product"
+          },
+          "Groups": [
+            {
+              "$id": "PersistentObjectAttributeGroup:6833cfc7-2758-43a9-8054-307a745b5a26",
+              "Id": "6833cfc7-2758-43a9-8054-307a745b5a26"
+            }
+          ],
+          "Tabs": [
+            {
+              "$id": "PersistentObjectAttributeTab:5192e43c-df35-4d40-9a89-c19b784d89ca",
+              "Id": "5192e43c-df35-4d40-9a89-c19b784d89ca"
+            }
+          ],
+          "Attributes": [
+            {
+              "$id": "PersistentObjectAttributeWithReference:29f3527c-7710-3527-b4e1-85054cc64d69",
+              "$type": "Vidyano.Service.Repository.PersistentObjectAttributeWithReference, Vidyano.Service",
+              "DisplayAttribute": "Description",
+              "LookupId": "228beb4e-0969-4eb4-a546-b4df7f297fe5",
+              "Id": "29f3527c-7710-3527-b4e1-85054cc64d69",
+              "Offset": 90,
+              "Name": "Category",
+              "Label": {
+                "en": "Category"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:Reference"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:6833cfc7-2758-43a9-8054-307a745b5a26"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:5192e43c-df35-4d40-9a89-c19b784d89ca"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:7696dde6-cd95-339e-af52-5f5e2e163081",
+              "Id": "7696dde6-cd95-339e-af52-5f5e2e163081",
+              "Offset": 60,
+              "Rules": "Required",
+              "Name": "Discontinued",
+              "Label": {
+                "en": "Discontinued"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:Boolean"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:6833cfc7-2758-43a9-8054-307a745b5a26"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:5192e43c-df35-4d40-9a89-c19b784d89ca"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:02317f63-68ae-35ad-bf1c-7f46a0613a5e",
+              "Id": "02317f63-68ae-35ad-bf1c-7f46a0613a5e",
+              "Offset": 10,
+              "Rules": "NotEmpty",
+              "Name": "Name",
+              "Label": {
+                "en": "Name"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:6833cfc7-2758-43a9-8054-307a745b5a26"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:5192e43c-df35-4d40-9a89-c19b784d89ca"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:3aec5cc6-a2cc-3204-87a3-0012e66824f6",
+              "Id": "3aec5cc6-a2cc-3204-87a3-0012e66824f6",
+              "Offset": 30,
+              "Rules": "Required",
+              "Name": "PricePerUnit",
+              "Label": {
+                "en": "Price per unit"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:Decimal"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:6833cfc7-2758-43a9-8054-307a745b5a26"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:5192e43c-df35-4d40-9a89-c19b784d89ca"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:edd3e64b-6108-33ee-b3ea-dbddff779799",
+              "Id": "edd3e64b-6108-33ee-b3ea-dbddff779799",
+              "Offset": 20,
+              "Rules": "NotEmpty",
+              "Name": "QuantityPerUnit",
+              "Label": {
+                "en": "Quantity per unit"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:6833cfc7-2758-43a9-8054-307a745b5a26"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:5192e43c-df35-4d40-9a89-c19b784d89ca"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:b57736b6-d0fa-39d2-a8e8-180896bab88c",
+              "Id": "b57736b6-d0fa-39d2-a8e8-180896bab88c",
+              "Offset": 70,
+              "Rules": "Required",
+              "Name": "ReorderLevel",
+              "Label": {
+                "en": "Reorder level"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:Int32"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:6833cfc7-2758-43a9-8054-307a745b5a26"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:5192e43c-df35-4d40-9a89-c19b784d89ca"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttributeWithReference:57ec46c6-1ac5-3e37-9cff-b76d399e36a7",
+              "$type": "Vidyano.Service.Repository.PersistentObjectAttributeWithReference, Vidyano.Service",
+              "DisplayAttribute": "Name",
+              "LookupId": "310b02ca-4213-4a51-ad8d-d527a8fe0698",
+              "Id": "57ec46c6-1ac5-3e37-9cff-b76d399e36a7",
+              "Offset": 80,
+              "Name": "Supplier",
+              "Label": {
+                "en": "Supplier"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:Reference"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:6833cfc7-2758-43a9-8054-307a745b5a26"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:5192e43c-df35-4d40-9a89-c19b784d89ca"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:ce697aab-c9c2-35da-a7fb-45b713d90230",
+              "Id": "ce697aab-c9c2-35da-a7fb-45b713d90230",
+              "Offset": 40,
+              "Rules": "Required",
+              "Name": "UnitsInStock",
+              "Label": {
+                "en": "Units in stock"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:Int32"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:6833cfc7-2758-43a9-8054-307a745b5a26"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:5192e43c-df35-4d40-9a89-c19b784d89ca"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:0c835b64-557a-32ec-8932-078582370ed0",
+              "Id": "0c835b64-557a-32ec-8932-078582370ed0",
+              "Offset": 50,
+              "Rules": "Required",
+              "Name": "UnitsOnOrder",
+              "Label": {
+                "en": "Units on order"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:Int32"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:6833cfc7-2758-43a9-8054-307a745b5a26"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:5192e43c-df35-4d40-9a89-c19b784d89ca"
+              }
+            }
+          ],
+          "Queries": []
+        },
+        "e66e308d-f367-3a02-91c6-573fd86e3799": {
+          "$id": "PersistentObject:e66e308d-f367-3a02-91c6-573fd86e3799",
+          "SchemaName": "VidyanoRavenSample",
+          "Type": "ProductsByCategory",
+          "Salt": "eQTGpJ3E5928If4M98hSLasq21w-NDA9ztBBhtL7DRtd05b886dEYA",
+          "Breadcrumb": "{Count}",
+          "ContextProperty": "ProductsByCategory",
+          "Label": {
+            "en": "Products by category"
+          },
+          "Groups": [
+            {
+              "$id": "PersistentObjectAttributeGroup:37cdd156-cdc5-4a75-80c8-487ca32d2e2d",
+              "Id": "37cdd156-cdc5-4a75-80c8-487ca32d2e2d"
+            }
+          ],
+          "Tabs": [
+            {
+              "$id": "PersistentObjectAttributeTab:86d40ae4-91dc-426f-b214-5870a3034654",
+              "Id": "86d40ae4-91dc-426f-b214-5870a3034654"
+            }
+          ],
+          "Attributes": [
+            {
+              "$id": "PersistentObjectAttribute:e59039f1-e0a1-3bfd-8857-10d5c362ff55",
+              "Id": "e59039f1-e0a1-3bfd-8857-10d5c362ff55",
+              "Offset": 10,
+              "Rules": "Required",
+              "Name": "Count",
+              "Label": {
+                "en": "Count"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:Int32"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:37cdd156-cdc5-4a75-80c8-487ca32d2e2d"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:86d40ae4-91dc-426f-b214-5870a3034654"
+              }
+            }
+          ],
+          "Queries": []
+        },
+        "6b14eb98-c4ba-328e-b1f9-eb31ab21c010": {
+          "$id": "PersistentObject:6b14eb98-c4ba-328e-b1f9-eb31ab21c010",
+          "SchemaName": "VidyanoRavenSample",
+          "Type": "Region",
+          "Salt": "Z4IutfG9y2FeYYb48Io-MMsbNQw5Spzmdi9ZW5JPuwU2Z66EAW_byw",
+          "Breadcrumb": "{Name}",
+          "ContextProperty": "Regions",
+          "Label": {
+            "en": "Region"
+          },
+          "Groups": [
+            {
+              "$id": "PersistentObjectAttributeGroup:d36dfbe6-c742-4bf4-a56b-ebdef0eb35a1",
+              "Id": "d36dfbe6-c742-4bf4-a56b-ebdef0eb35a1"
+            }
+          ],
+          "Tabs": [
+            {
+              "$id": "PersistentObjectAttributeTab:f97e7373-5578-4a08-9c2d-9fd37eb926d6",
+              "Id": "f97e7373-5578-4a08-9c2d-9fd37eb926d6"
+            }
+          ],
+          "Attributes": [
+            {
+              "$id": "PersistentObjectAttribute:a52c1ab3-83d7-3385-847a-43e3029c9c10",
+              "Id": "a52c1ab3-83d7-3385-847a-43e3029c9c10",
+              "Offset": 10,
+              "Rules": "NotEmpty",
+              "Name": "Name",
+              "Label": {
+                "en": "Name"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:d36dfbe6-c742-4bf4-a56b-ebdef0eb35a1"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:f97e7373-5578-4a08-9c2d-9fd37eb926d6"
+              }
+            }
+          ],
+          "Queries": []
+        },
+        "8aa3fff0-1ce8-39b4-9d15-17ea025d5147": {
+          "$id": "PersistentObject:8aa3fff0-1ce8-39b4-9d15-17ea025d5147",
+          "SchemaName": "VidyanoRavenSample",
+          "Type": "Shipper",
+          "Salt": "eddVXorWj9a7jvIcQaCSI9yYnQfckW7cOVlFjeU859vkaMzPXR87pQ",
+          "Breadcrumb": "{Name}",
+          "ContextProperty": "Shippers",
+          "Label": {
+            "en": "Shipper"
+          },
+          "Groups": [
+            {
+              "$id": "PersistentObjectAttributeGroup:4856fa21-6605-4ace-9c33-6477bb8f91eb",
+              "Id": "4856fa21-6605-4ace-9c33-6477bb8f91eb"
+            }
+          ],
+          "Tabs": [
+            {
+              "$id": "PersistentObjectAttributeTab:548a028b-e7e2-4e7f-a22e-0053143d466e",
+              "Id": "548a028b-e7e2-4e7f-a22e-0053143d466e"
+            }
+          ],
+          "Attributes": [
+            {
+              "$id": "PersistentObjectAttribute:bff640cd-2b6d-3e0e-bfb0-25798fd86c57",
+              "Id": "bff640cd-2b6d-3e0e-bfb0-25798fd86c57",
+              "Offset": 10,
+              "Rules": "NotEmpty",
+              "Name": "Name",
+              "Label": {
+                "en": "Name"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:4856fa21-6605-4ace-9c33-6477bb8f91eb"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:548a028b-e7e2-4e7f-a22e-0053143d466e"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:ad9f4c83-8a3e-3826-9253-765d7e33c6c3",
+              "Id": "ad9f4c83-8a3e-3826-9253-765d7e33c6c3",
+              "Offset": 20,
+              "Rules": "NotEmpty",
+              "Name": "Phone",
+              "Label": {
+                "en": "Phone"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:4856fa21-6605-4ace-9c33-6477bb8f91eb"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:548a028b-e7e2-4e7f-a22e-0053143d466e"
+              }
+            }
+          ],
+          "Queries": []
+        },
+        "d9aeec45-fbed-3e44-aa47-d7ebab44ae6b": {
+          "$id": "PersistentObject:d9aeec45-fbed-3e44-aa47-d7ebab44ae6b",
+          "SchemaName": "VidyanoRavenSample",
+          "Type": "Supplier",
+          "Salt": "c3dRTs6dmfBRXHTTz606qUTHlu2GPd_dsoG6IPM-6nf1BYdCGLYxaw",
+          "Breadcrumb": "{Name}",
+          "ContextProperty": "Suppliers",
+          "Label": {
+            "en": "Supplier"
+          },
+          "Groups": [
+            {
+              "$id": "PersistentObjectAttributeGroup:fd5b7cc6-2bd8-4f54-88f9-27929f7763d2",
+              "Id": "fd5b7cc6-2bd8-4f54-88f9-27929f7763d2"
+            }
+          ],
+          "Tabs": [
+            {
+              "$id": "PersistentObjectAttributeTab:4f167da4-5e00-432d-a0c7-33f523a1e950",
+              "Id": "4f167da4-5e00-432d-a0c7-33f523a1e950"
+            }
+          ],
+          "Attributes": [
+            {
+              "$id": "PersistentObjectAttribute:b73c0137-bf99-33c2-a7ec-e47716f42f91",
+              "Id": "b73c0137-bf99-33c2-a7ec-e47716f42f91",
+              "Offset": 30,
+              "Rules": "Required",
+              "Name": "Address",
+              "Label": {
+                "en": "Address"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:fd5b7cc6-2bd8-4f54-88f9-27929f7763d2"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:4f167da4-5e00-432d-a0c7-33f523a1e950"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:189ae8a3-a6cd-3980-a4b3-c0443bab50c6",
+              "Id": "189ae8a3-a6cd-3980-a4b3-c0443bab50c6",
+              "Offset": 10,
+              "Rules": "Required",
+              "Name": "Contact",
+              "Label": {
+                "en": "Contact"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:fd5b7cc6-2bd8-4f54-88f9-27929f7763d2"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:4f167da4-5e00-432d-a0c7-33f523a1e950"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:835185a8-2823-3e2c-8d36-2a3ed9cd146f",
+              "Id": "835185a8-2823-3e2c-8d36-2a3ed9cd146f",
+              "Offset": 50,
+              "Name": "Fax",
+              "Label": {
+                "en": "Fax"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:fd5b7cc6-2bd8-4f54-88f9-27929f7763d2"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:4f167da4-5e00-432d-a0c7-33f523a1e950"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:9e986dcd-d3b4-3ea9-923a-de07a625d1b2",
+              "Id": "9e986dcd-d3b4-3ea9-923a-de07a625d1b2",
+              "Offset": 60,
+              "Name": "HomePage",
+              "Label": {
+                "en": "Home page"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:fd5b7cc6-2bd8-4f54-88f9-27929f7763d2"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:4f167da4-5e00-432d-a0c7-33f523a1e950"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:d56580dd-6179-35cc-a2cd-10045c972dc2",
+              "Id": "d56580dd-6179-35cc-a2cd-10045c972dc2",
+              "Offset": 20,
+              "Rules": "NotEmpty",
+              "Name": "Name",
+              "Label": {
+                "en": "Name"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:fd5b7cc6-2bd8-4f54-88f9-27929f7763d2"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:4f167da4-5e00-432d-a0c7-33f523a1e950"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:9ab169c3-b01c-33bc-afb4-fe9f4d8b7dd8",
+              "Id": "9ab169c3-b01c-33bc-afb4-fe9f4d8b7dd8",
+              "Offset": 40,
+              "Rules": "NotEmpty",
+              "Name": "Phone",
+              "Label": {
+                "en": "Phone"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:fd5b7cc6-2bd8-4f54-88f9-27929f7763d2"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:4f167da4-5e00-432d-a0c7-33f523a1e950"
+              }
+            }
+          ],
+          "Queries": []
+        },
+        "39d42285-eacc-3456-b5a5-e43058c938a1": {
+          "$id": "PersistentObject:39d42285-eacc-3456-b5a5-e43058c938a1",
+          "SchemaName": "VidyanoRavenSample",
+          "Type": "VCompany",
+          "Salt": "ykS1aHNHmaSx__NkV97ikR-jAqgg2oKeGzPh1s7xOBEzQ3W2cCw-DQ",
+          "Breadcrumb": "{Name}",
+          "ContextProperty": "VCompanies",
+          "Label": {
+            "en": "V company"
+          },
+          "Groups": [
+            {
+              "$id": "PersistentObjectAttributeGroup:8fe4e248-889b-4452-9c93-bdb78f732228",
+              "Id": "8fe4e248-889b-4452-9c93-bdb78f732228"
+            }
+          ],
+          "Tabs": [
+            {
+              "$id": "PersistentObjectAttributeTab:19988af2-449f-49ac-a0d7-5381b423d574",
+              "Id": "19988af2-449f-49ac-a0d7-5381b423d574"
+            }
+          ],
+          "Attributes": [
+            {
+              "$id": "PersistentObjectAttribute:24970456-c7ea-3e6e-bbaa-ae59d08c828f",
+              "Id": "24970456-c7ea-3e6e-bbaa-ae59d08c828f",
+              "Offset": 20,
+              "Name": "Country",
+              "Label": {
+                "en": "Country"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:8fe4e248-889b-4452-9c93-bdb78f732228"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:19988af2-449f-49ac-a0d7-5381b423d574"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:5912bebb-48f2-3ace-ba23-24a4e3cf5b9d",
+              "Id": "5912bebb-48f2-3ace-ba23-24a4e3cf5b9d",
+              "Offset": 10,
+              "Rules": "NotEmpty",
+              "Name": "Name",
+              "Label": {
+                "en": "Name"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:8fe4e248-889b-4452-9c93-bdb78f732228"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:19988af2-449f-49ac-a0d7-5381b423d574"
+              }
+            }
+          ],
+          "Queries": []
+        },
+        "15c9eccd-3505-3457-9e47-d4be29733ae0": {
+          "$id": "PersistentObject:15c9eccd-3505-3457-9e47-d4be29733ae0",
+          "SchemaName": "VidyanoRavenSample",
+          "Type": "VOrder",
+          "Salt": "UqAeyUX-VOIKGdBQgC_GBOY1pQGcOQ9dyCpi8cx2PUbKlBILa644qA",
+          "Breadcrumb": "{CompanyName}",
+          "ContextProperty": "VOrders",
+          "Label": {
+            "en": "V order"
+          },
+          "Groups": [
+            {
+              "$id": "PersistentObjectAttributeGroup:a5eeca1d-382d-4f95-9d12-1cf3506ae731",
+              "Id": "a5eeca1d-382d-4f95-9d12-1cf3506ae731"
+            }
+          ],
+          "Tabs": [
+            {
+              "$id": "PersistentObjectAttributeTab:5dda6c33-c0f9-42e0-b0cf-98d991c91607",
+              "Id": "5dda6c33-c0f9-42e0-b0cf-98d991c91607"
+            }
+          ],
+          "Attributes": [
+            {
+              "$id": "PersistentObjectAttribute:4a3d7d62-4f2c-3104-a480-419339d66350",
+              "Id": "4a3d7d62-4f2c-3104-a480-419339d66350",
+              "Offset": 10,
+              "Name": "CompanyName",
+              "Label": {
+                "en": "Company name"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:a5eeca1d-382d-4f95-9d12-1cf3506ae731"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:5dda6c33-c0f9-42e0-b0cf-98d991c91607"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:a9736de6-59d4-36ac-9fa0-7cbb6b0b2417",
+              "Id": "a9736de6-59d4-36ac-9fa0-7cbb6b0b2417",
+              "Offset": 30,
+              "Rules": "Required",
+              "Name": "Discount",
+              "Label": {
+                "en": "Discount"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:Decimal"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:a5eeca1d-382d-4f95-9d12-1cf3506ae731"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:5dda6c33-c0f9-42e0-b0cf-98d991c91607"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:85b05e49-7440-334e-9293-977a90c42cd1",
+              "Id": "85b05e49-7440-334e-9293-977a90c42cd1",
+              "Offset": 20,
+              "Rules": "Required",
+              "Name": "SubTotal",
+              "Label": {
+                "en": "Sub total"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:Decimal"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:a5eeca1d-382d-4f95-9d12-1cf3506ae731"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:5dda6c33-c0f9-42e0-b0cf-98d991c91607"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:b1582640-dbfc-3f2d-adb0-593f3ca89f24",
+              "Id": "b1582640-dbfc-3f2d-adb0-593f3ca89f24",
+              "Offset": 40,
+              "Rules": "Required",
+              "Name": "Total",
+              "Label": {
+                "en": "Total"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:Decimal"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:a5eeca1d-382d-4f95-9d12-1cf3506ae731"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:5dda6c33-c0f9-42e0-b0cf-98d991c91607"
+              }
+            }
+          ],
+          "Queries": []
+        }
+      },
+      "Queries": {
+        "228beb4e-0969-4eb4-a546-b4df7f297fe5": {
+          "$id": "Query:228beb4e-0969-4eb4-a546-b4df7f297fe5",
+          "Source": "Database.Categories",
+          "AutoQuery": true,
+          "Name": "Categories",
+          "Label": {
+            "en": "Categories"
+          },
+          "PersistentObject": {
+            "$ref": "PersistentObject:3f97b417-3044-394b-b32f-6caca542b7c4"
+          },
+          "Columns": []
+        },
+        "2d576fa0-3325-403d-9bd4-4cfec913fd2b": {
+          "$id": "Query:2d576fa0-3325-403d-9bd4-4cfec913fd2b",
+          "Source": "Database.Companies",
+          "AutoQuery": true,
+          "Name": "Companies",
+          "Label": {
+            "en": "Companies"
+          },
+          "PersistentObject": {
+            "$ref": "PersistentObject:5ba00ff9-5705-3605-88e3-f4297b6ba7b3"
+          },
+          "Columns": []
+        },
+        "310b02ca-4213-4a51-ad8d-d527a8fe0698": {
+          "$id": "Query:310b02ca-4213-4a51-ad8d-d527a8fe0698",
+          "Source": "Database.Suppliers",
+          "AutoQuery": true,
+          "Name": "Suppliers",
+          "Label": {
+            "en": "Suppliers"
+          },
+          "PersistentObject": {
+            "$ref": "PersistentObject:d9aeec45-fbed-3e44-aa47-d7ebab44ae6b"
+          },
+          "Columns": []
+        },
+        "7c4fdac5-34b3-48e2-a442-48d6fac245e7": {
+          "$id": "Query:7c4fdac5-34b3-48e2-a442-48d6fac245e7",
+          "Source": "Database.Products",
+          "AutoQuery": true,
+          "Name": "Products",
+          "Label": {
+            "en": "Products"
+          },
+          "PersistentObject": {
+            "$ref": "PersistentObject:f3c4179d-c383-3fc6-86ad-04f6d71f2f4f"
+          },
+          "Columns": []
+        },
+        "88d7ea29-51da-4f31-afc8-4bfe6c6de4c7": {
+          "$id": "Query:88d7ea29-51da-4f31-afc8-4bfe6c6de4c7",
+          "Source": "Database.Regions",
+          "AutoQuery": true,
+          "Name": "Regions",
+          "Label": {
+            "en": "Regions"
+          },
+          "PersistentObject": {
+            "$ref": "PersistentObject:6b14eb98-c4ba-328e-b1f9-eb31ab21c010"
+          },
+          "Columns": []
+        },
+        "b425a21b-1cf0-44d9-9964-5c11c028d8e7": {
+          "$id": "Query:b425a21b-1cf0-44d9-9964-5c11c028d8e7",
+          "Source": "Database.Shippers",
+          "AutoQuery": true,
+          "Name": "Shippers",
+          "Label": {
+            "en": "Shippers"
+          },
+          "PersistentObject": {
+            "$ref": "PersistentObject:8aa3fff0-1ce8-39b4-9d15-17ea025d5147"
+          },
+          "Columns": []
+        },
+        "bae3b276-b534-439f-b5d4-317363b7ff46": {
+          "$id": "Query:bae3b276-b534-439f-b5d4-317363b7ff46",
+          "Source": "Database.Employees",
+          "AutoQuery": true,
+          "Name": "Employees",
+          "Label": {
+            "en": "Employees"
+          },
+          "PersistentObject": {
+            "$ref": "PersistentObject:83e6b167-1dde-3372-a1f8-f9bdd08eb634"
+          },
+          "Columns": []
+        },
+        "daa91aaa-fb0f-4ef1-a3a7-125deb280632": {
+          "$id": "Query:daa91aaa-fb0f-4ef1-a3a7-125deb280632",
+          "Source": "Database.Orders",
+          "AutoQuery": true,
+          "Name": "Orders",
+          "Label": {
+            "en": "Orders"
+          },
+          "PersistentObject": {
+            "$ref": "PersistentObject:e61fba6b-ef58-3404-90d6-5977d1ad52e1"
+          },
+          "Columns": []
+        },
+        "db69dafb-a3a6-4990-93b8-f02cff005a03": {
+          "$id": "Query:db69dafb-a3a6-4990-93b8-f02cff005a03",
+          "Source": "Database.ProductsByCategory",
+          "AutoQuery": true,
+          "Name": "ProductsByCategory",
+          "Label": {
+            "en": "Products by category"
+          },
+          "PersistentObject": {
+            "$ref": "PersistentObject:e66e308d-f367-3a02-91c6-573fd86e3799"
+          },
+          "Columns": []
+        },
+        "ea550568-bee1-457d-94f0-bba7500d67f9": {
+          "$id": "Query:ea550568-bee1-457d-94f0-bba7500d67f9",
+          "Source": "Database.VCompanies",
+          "AutoQuery": true,
+          "Name": "VCompanies",
+          "Label": {
+            "en": "V companies"
+          },
+          "PersistentObject": {
+            "$ref": "PersistentObject:39d42285-eacc-3456-b5a5-e43058c938a1"
+          },
+          "Columns": []
+        },
+        "f2edb63c-2098-4439-af37-07ddb9fee7bb": {
+          "$id": "Query:f2edb63c-2098-4439-af37-07ddb9fee7bb",
+          "Source": "Database.VOrders",
+          "AutoQuery": true,
+          "Name": "VOrders",
+          "Label": {
+            "en": "V orders"
+          },
+          "PersistentObject": {
+            "$ref": "PersistentObject:15c9eccd-3505-3457-9e47-d4be29733ae0"
+          },
+          "Columns": []
+        }
+      }
+    }
+  },
+  "ProgramUnits": [
+    {
+      "Name": "CRUD",
+      "Offset": 10,
+      "Title": {
+        "en": "CRUD"
+      },
+      "OpenFirst": true,
+      "Groups": [],
+      "Items": [
+        {
+          "Offset": 10,
+          "Title": {
+            "en": "Categories"
+          },
+          "Name": "Categories",
+          "Query": {
+            "$ref": "Query:228beb4e-0969-4eb4-a546-b4df7f297fe5"
+          }
+        },
+        {
+          "Offset": 20,
+          "Title": {
+            "en": "Companies"
+          },
+          "Name": "Companies",
+          "Query": {
+            "$ref": "Query:2d576fa0-3325-403d-9bd4-4cfec913fd2b"
+          }
+        },
+        {
+          "Offset": 30,
+          "Title": {
+            "en": "Employees"
+          },
+          "Name": "Employees",
+          "Query": {
+            "$ref": "Query:bae3b276-b534-439f-b5d4-317363b7ff46"
+          }
+        },
+        {
+          "Offset": 40,
+          "Title": {
+            "en": "Products"
+          },
+          "Name": "Products",
+          "Query": {
+            "$ref": "Query:7c4fdac5-34b3-48e2-a442-48d6fac245e7"
+          }
+        },
+        {
+          "Offset": 50,
+          "Title": {
+            "en": "Suppliers"
+          },
+          "Name": "Suppliers",
+          "Query": {
+            "$ref": "Query:310b02ca-4213-4a51-ad8d-d527a8fe0698"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "Start",
+      "Title": {
+        "en": "Getting started"
+      },
+      "OpenFirst": true,
+      "Groups": [],
+      "Items": [
+        {
+          "Title": {
+            "en": "Getting started"
+          },
+          "Name": "GettingStarted",
+          "PersistentObject": {
+            "$ref": "PersistentObject:eb6be7f4-1974-323e-a3e3-8771925b250d"
+          }
+        }
+      ]
+    }
+  ],
+  "Reports": [],
+  "ServiceVersion": "6.0.0-alpha",
+  "ModelHash": "LaUqdKLwrJeTxw3nBQlaDoh4pcgLvwmv8c4ofzxui8g=",
+  "SeederHash": "oihF/17Hwdfd14kOY+dzNUFpjJv6IVWJ9PKd3N3RQco="
+}

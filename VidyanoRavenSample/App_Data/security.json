@@ -1,0 +1,38 @@
+{
+  "Groups": {
+    "fe9429ba-d5cd-4e7c-bbe4-05a4c3497d97": "Administrators",
+    "d3bd3312-0730-43d9-9bf4-9e14c75b00f7": "Users"
+  },
+  "Rights": [
+    {
+      "Id": "b63444ea-5b44-4cfd-b63e-e23bbf58f9f0",
+      "Resource": "QueryReadEditNewDelete/VidyanoRavenSample.Category",
+      "UserId": "d3bd3312-0730-43d9-9bf4-9e14c75b00f7"
+    },
+    {
+      "Id": "3eacace4-d531-435a-9406-f67e4ca39ccd",
+      "Resource": "QueryReadEditNewDelete/VidyanoRavenSample.Company",
+      "UserId": "d3bd3312-0730-43d9-9bf4-9e14c75b00f7"
+    },
+    {
+      "Id": "70a5f398-d60f-4e09-b60e-6e8d0e99bd53",
+      "Resource": "QueryReadEditNewDelete/VidyanoRavenSample.Employee",
+      "UserId": "d3bd3312-0730-43d9-9bf4-9e14c75b00f7"
+    },
+    {
+      "Id": "62f6b019-324f-4d54-ae4c-27529305bb84",
+      "Resource": "QueryReadEditNewDelete/VidyanoRavenSample.Product",
+      "UserId": "d3bd3312-0730-43d9-9bf4-9e14c75b00f7"
+    },
+    {
+      "Id": "63a8ad59-d482-4a06-8fe9-3ca19b1f1145",
+      "Resource": "QueryReadEditNewDelete/VidyanoRavenSample.Supplier",
+      "UserId": "d3bd3312-0730-43d9-9bf4-9e14c75b00f7"
+    },
+    {
+      "Id": "a90a4324-357f-496b-8000-76b38c9f09ec",
+      "Resource": "Read/VidyanoRavenSample.GettingStarted",
+      "UserId": "d3bd3312-0730-43d9-9bf4-9e14c75b00f7"
+    }
+  ]
+}
