@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.Linq;
 using Raven.Client.Documents.Indexes;
+using Vidyano.Service.RavenDB;
 using Vidyano.Service.Repository;
 
 namespace VidyanoRavenSample.Service
@@ -29,11 +29,11 @@ namespace VidyanoRavenSample.Service
         }
     }
 
-    [Mapped]
+    [FromIndex(typeof(Products_ByCategory))]
     public class ProductsByCategory
     {
         [Key]
-        public string Category { get; set; }
+        public string Category { get; set; } = null!;
 
         public int Count { get; set; }
     }
@@ -60,12 +60,12 @@ namespace VidyanoRavenSample.Service
         }
     }
 
-    [Mapped]
+    [FromIndex(typeof(Orders_Overview))]
     public class VOrder
     {
-        public string Id { get; set; }
+        public string Id { get; set; } = null!;
 
-        public string CompanyName { get; set; }
+        public string CompanyName { get; set; } = null!;
 
         public decimal SubTotal { get; set; }
 
@@ -131,11 +131,11 @@ namespace VidyanoRavenSample.Service
     }
 
     [ProjectedType(typeof(Company))]
+    [FromIndex(typeof(Company_View))]
     public class VCompany
     {
-        public string Id { get; set; }
-        [Required]
-        public string Name { get; set; }
+        public string Id { get; set; } = null!;
+        public string Name { get; set; } = null!;
         public string? Country { get; set; }
     }
 
@@ -148,7 +148,7 @@ namespace VidyanoRavenSample.Service
                 select new VCompany
                 {
                     Name = company.Name,
-                    Country = company.Address.Country,
+                    Country = company.Address!.Country,
                 };
         }
     }

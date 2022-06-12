@@ -1,6 +1,4 @@
-﻿using System.IO;
-using Microsoft.Extensions.Hosting;
-using Raven.Client.Documents;
+﻿using Raven.Client.Documents;
 using Vidyano.Service.Repository;
 
 namespace VidyanoRavenSample.Service
@@ -22,7 +20,7 @@ namespace VidyanoRavenSample.Service
         }
 
 
-        public override void OnLoad(PersistentObject obj, PersistentObject parent)
+        public override void OnLoad(PersistentObject obj, PersistentObject? parent)
         {
             // NOTE: By default this would load the entity from the database using the obj.ObjectId and obj.ContextProperty
 

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using Newtonsoft.Json;
 using Vidyano.Service.Repository;
 
@@ -8,10 +6,9 @@ namespace VidyanoRavenSample.Service
 {
     public class Company
     {
-        public string Id { get; set; }
+        public string Id { get; set; } = null!;
         public string? ExternalId { get; set; }
-        [Required]
-        public string Name { get; set; }
+        public string Name { get; set; } = null!;
         public Contact? Contact { get; set; }
         public Address? Address { get; set; }
         public string? Phone { get; set; }
@@ -41,16 +38,12 @@ namespace VidyanoRavenSample.Service
             nameof(Country),
         };
 
-        [Required]
-        public string Line1 { get; set; }
+        public string Line1 { get; set; } = null!;
         public string? Line2 { get; set; }
-        [Required]
-        public string City { get; set; }
+        public string City { get; set; } = null!;
         public string? Region { get; set; }
-        [Required]
-        public string PostalCode { get; set; }
-        [Required]
-        public string Country { get; set; }
+        public string PostalCode { get; set; } = null!;
+        public string Country { get; set; } = null!;
 
         public int CompareTo(Address? other)
         {
@@ -72,10 +65,8 @@ namespace VidyanoRavenSample.Service
             nameof(Title),
         };
 
-        [Required]
-        public string Name { get; set; }
-        [Required]
-        public string Title { get; set; }
+        public string Name { get; set; } = null!;
+        public string Title { get; set; } = null!;
 
         public int CompareTo(Contact? other)
         {
@@ -90,41 +81,34 @@ namespace VidyanoRavenSample.Service
 
     public class Category
     {
-        public string Id { get; set; }
-        [Required]
-        public string Name { get; set; }
-        [Required]
-        public string Description { get; set; }
+        public string Id { get; set; } = null!;
+        public string Name { get; set; } = null!;
+        public string Description { get; set; } = null!;
     }
 
     public class Order
     {
-        public string Id { get; set; }
-        [Required]
+        public string Id { get; set; } = null!;
         [Reference(typeof(Company))]
-        public string Company { get; set; }
-        [Required]
+        public string Company { get; set; } = null!;
         [Reference(typeof(Employee))]
-        public string Employee { get; set; }
+        public string Employee { get; set; } = null!;
         public DateTime OrderedAt { get; set; }
         public DateTime RequireAt { get; set; }
         public DateTime? ShippedAt { get; set; }
-        public Address ShipTo { get; set; }
-        [Required]
+        public Address ShipTo { get; set; } = null!;
         [Reference(typeof(Shipper))]
-        public string ShipVia { get; set; }
+        public string ShipVia { get; set; } = null!;
         public decimal Freight { get; set; }
-        public List<OrderLine> Lines { get; set; } = new List<OrderLine>();
+        public List<OrderLine> Lines { get; set; } = new();
     }
 
     [ValueObject]
     public class OrderLine
     {
-        [Required]
         [Reference(typeof(Product))]
-        public string Product { get; set; }
-        [Required]
-        public string ProductName { get; set; }
+        public string Product { get; set; } = null!;
+        public string ProductName { get; set; } = null!;
         public decimal PricePerUnit { get; set; }
         public int Quantity { get; set; }
         public decimal Discount { get; set; }
@@ -132,17 +116,13 @@ namespace VidyanoRavenSample.Service
 
     public class Product
     {
-        public string Id { get; set; }
-        [Required]
-        public string Name { get; set; }
-        [Required]
+        public string Id { get; set; } = null!;
+        public string Name { get; set; } = null!;
         [Reference(typeof(Supplier))]
-        public string Supplier { get; set; }
-        [Required]
+        public string Supplier { get; set; } = null!;
         [Reference(typeof(Category))]
-        public string Category { get; set; }
-        [Required]
-        public string QuantityPerUnit { get; set; }
+        public string Category { get; set; } = null!;
+        public string QuantityPerUnit { get; set; } = null!;
         public decimal PricePerUnit { get; set; }
         public int UnitsInStock { get; set; }
         public int UnitsOnOrder { get; set; }
@@ -152,69 +132,51 @@ namespace VidyanoRavenSample.Service
 
     public class Supplier
     {
-        public string Id { get; set; }
-        [Required]
-        public Contact Contact { get; set; }
-        [Required]
-        public string Name { get; set; }
-        [Required]
-        public Address Address { get; set; }
-        [Required]
-        public string Phone { get; set; }
+        public string Id { get; set; } = null!;
+        public Contact Contact { get; set; } = null!;
+        public string Name { get; set; } = null!;
+        public Address Address { get; set; } = null!;
+        public string Phone { get; set; } = null!;
         public string? Fax { get; set; }
         public string? HomePage { get; set; }
     }
 
     public class Employee
     {
-        public string Id { get; set; }
-        [Required]
-        public string LastName { get; set; }
-        [Required]
-        public string FirstName { get; set; }
-        [Required]
-        public string Title { get; set; }
-        [Required]
-        public Address Address { get; set; }
+        public string Id { get; set; } = null!;
+        public string LastName { get; set; } = null!;
+        public string FirstName { get; set; } = null!;
+        public string Title { get; set; } = null!;
+        public Address Address { get; set; } = null!;
         public DateTime HiredAt { get; set; }
         public DateTime Birthday { get; set; }
-        [Required]
-        public string HomePhone { get; set; }
-        [Required]
-        public string Extension { get; set; }
+        public string HomePhone { get; set; } = null!;
+        public string Extension { get; set; } = null!;
         [Reference(typeof(Employee))]
         public string? ReportsTo { get; set; }
-        [Required]
-        public List<string> Notes { get; set; }
+        public List<string> Notes { get; set; } = null!;
 
-        [Required]
-        public List<string> Territories { get; set; }
+        public List<string> Territories { get; set; } = null!;
     }
 
     public class Region
     {
-        public string Id { get; set; }
-        [Required]
-        public string Name { get; set; }
-        [Required]
-        public List<Territory> Territories { get; set; }
+        public string Id { get; set; } = null!;
+        public string Name { get; set; } = null!;
+        public List<Territory> Territories { get; set; } = null!;
     }
 
     [ValueObject]
     public class Territory
     {
-        [Required]
-        public string Code { get; set; }
-        [Required]
-        public string Name { get; set; }
+        public string Code { get; set; } = null!;
+        public string Name { get; set; } = null!;
     }
 
     public class Shipper
     {
-        public string Id { get; set; }
-        [Required]
-        public string Name { get; set; }
-        [Required]
-        public string Phone { get; set; }
+        public string Id { get; set; } = null!;
+        public string Name { get; set; } = null!;
+        public string Phone { get; set; } = null!;
     }
 }

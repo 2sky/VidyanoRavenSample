@@ -1,15 +1,4 @@
-using System;
-using System.IO;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using Raven.Client.Documents.Indexes;
-using Raven.Client.Exceptions;
-using Raven.Client.Exceptions.Database;
-using Raven.Client.ServerWide;
-using Raven.Client.ServerWide.Operations;
 using Vidyano.Service;
 using Vidyano.Service.RavenDB;
 using VidyanoRavenSample.Service;
