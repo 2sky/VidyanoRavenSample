@@ -22,15 +22,9 @@ namespace VidyanoRavenSample
         {
             services.AddVidyanoRavenDB(Configuration, options =>
             {
-                var settings = new DatabaseSettings();
-                Configuration.Bind("Database", settings);
-                if (settings.CertPath != null)
-                    settings.CertPath = Path.Combine(Environment.ContentRootPath, settings.CertPath);
+                var store = options.Store = DatabaseSettings.CreateStore(Configuration, Environment);
 
-                var store = settings.CreateStore();
-                options.Store = store;
-
-                options.OnInitialized = () => IndexCreation.CreateIndexes(typeof(Startup).Assembly, store);
+                options.OnInitializedAsync = () => IndexCreation.CreateIndexesAsync(typeof(Startup).Assembly, store);
 
                 // NOTE: For demo purposes
                 // - we'll create the database if it doesn't exist and generate the sample data
@@ -44,13 +38,6 @@ namespace VidyanoRavenSample
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-
-            app.UseHttpsRedirection();
-            app.UseStaticFiles();
             app.UseVidyano(env, Configuration);
         }
     }

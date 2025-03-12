@@ -184,13 +184,6 @@
       "IsClient": true,
       "IsSystem": true
     },
-    "Close": {
-      "Value": {
-        "en": "Close"
-      },
-      "IsClient": true,
-      "IsSystem": true
-    },
     "ClearFilter": {
       "Value": {
         "en": "Clear"
@@ -201,6 +194,13 @@
     "ClearFilterFrom": {
       "Value": {
         "en": "Clear filter from {0}"
+      },
+      "IsClient": true,
+      "IsSystem": true
+    },
+    "Close": {
+      "Value": {
+        "en": "Close"
       },
       "IsClient": true,
       "IsSystem": true
@@ -373,6 +373,13 @@
       "IsClient": true,
       "IsSystem": true
     },
+    "Finish": {
+      "Value": {
+        "en": "Finish"
+      },
+      "IsClient": true,
+      "IsSystem": true
+    },
     "ForgotPassword": {
       "Value": {
         "en": "Forgot password?"
@@ -415,7 +422,7 @@
     },
     "ImpersonateMessage": {
       "Value": {
-        "en": "Open the following link in a new private browser window"
+        "en": "Open in incognito window"
       },
       "IsSystem": true
     },
@@ -639,6 +646,7 @@
       "Value": {
         "en": "Next"
       },
+      "IsClient": true,
       "IsSystem": true
     },
     "NextMonth": {
@@ -811,6 +819,7 @@
       "Value": {
         "en": "Previous"
       },
+      "IsClient": true,
       "IsSystem": true
     },
     "ReferenceEmptyValue": {
@@ -1124,6 +1133,12 @@
       "IsClient": true,
       "IsSystem": true
     },
+    "UnableToSaveModifiedEntity": {
+      "Value": {
+        "en": "{0} ({1}) has been modified by another user. Reload the page and try again."
+      },
+      "IsSystem": true
+    },
     "UnknownValueForFilter": {
       "Value": {
         "en": "Could not use '{0}' for {1}."
@@ -1199,15 +1214,15 @@
       },
       "IsSystem": true
     },
-    "UserSettingsOldPassword": {
-      "Value": {
-        "en": "Old password"
-      },
-      "IsSystem": true
-    },
     "UserSettingsNewPassword": {
       "Value": {
         "en": "New password"
+      },
+      "IsSystem": true
+    },
+    "UserSettingsOldPassword": {
+      "Value": {
+        "en": "Old password"
       },
       "IsSystem": true
     },

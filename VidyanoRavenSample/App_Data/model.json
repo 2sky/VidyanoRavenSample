@@ -274,6 +274,13 @@
       "CanFilter": false,
       "CanListDistincts": false
     },
+    "Icon": {
+      "$id": "DataType:Icon",
+      "IsSystem": true,
+      "CanSort": true,
+      "CanFilter": true,
+      "CanListDistincts": true
+    },
     "Image": {
       "$id": "DataType:Image",
       "IsSystem": true,
@@ -474,7 +481,7 @@
       "$id": "DataType:Single",
       "IsSystem": true,
       "CanSort": true,
-      "CanFilter": false,
+      "CanFilter": true,
       "CanListDistincts": true
     },
     "String": {
@@ -1168,7 +1175,7 @@
               "Visibility": 7,
               "ColumnSpan": 1,
               "DataType": {
-                "$ref": "DataType:MultiLineString"
+                "$ref": "DataType:MultiString"
               },
               "Group": {
                 "$ref": "PersistentObjectAttributeGroup:d5870b3a-c8d2-44a1-aa2d-035d234cceeb"
@@ -1320,6 +1327,7 @@
               "LookupId": "2d576fa0-3325-403d-9bd4-4cfec913fd2b",
               "Id": "4b92d836-2d39-3e06-b943-8f56563b9e8e",
               "Offset": 60,
+              "Rules": "Required",
               "Name": "Company",
               "Label": {
                 "en": "Company"
@@ -1343,6 +1351,7 @@
               "LookupId": "bae3b276-b534-439f-b5d4-317363b7ff46",
               "Id": "ab50b7dc-c553-39b1-9fea-33d8b6ea3128",
               "Offset": 70,
+              "Rules": "Required",
               "Name": "Employee",
               "Label": {
                 "en": "Employee"
@@ -1446,6 +1455,7 @@
               "$id": "PersistentObjectAttribute:7d05f337-973a-38ff-b9cc-bb782a33b0ba",
               "Id": "7d05f337-973a-38ff-b9cc-bb782a33b0ba",
               "Offset": 40,
+              "Rules": "Required",
               "Name": "ShipTo",
               "Label": {
                 "en": "Ship to"
@@ -1469,6 +1479,7 @@
               "LookupId": "b425a21b-1cf0-44d9-9964-5c11c028d8e7",
               "Id": "c64a4ea5-aa15-3a5b-8551-0b52cfc85270",
               "Offset": 80,
+              "Rules": "Required",
               "Name": "ShipVia",
               "Label": {
                 "en": "Ship via"
@@ -1483,6 +1494,140 @@
               },
               "Tab": {
                 "$ref": "PersistentObjectAttributeTab:66d87872-75f6-411d-a43e-bd298ff3a456"
+              }
+            }
+          ],
+          "Queries": [
+            "1a54a657-9267-424f-a0d7-8106589a180c"
+          ]
+        },
+        "fadbbe2a-678a-3461-9a3d-982919c87acd": {
+          "$id": "PersistentObject:fadbbe2a-678a-3461-9a3d-982919c87acd",
+          "SchemaName": "VidyanoRavenSample",
+          "Type": "OrderLine",
+          "Salt": "ohJlOynuQs5PsavcikfkbB1d_OigtUeUW_HwpE_m5Z_wTfw4lfDRVw",
+          "Label": {
+            "en": "Order line"
+          },
+          "Groups": [
+            {
+              "$id": "PersistentObjectAttributeGroup:84776331-7f27-4814-9623-7e4d6d473392",
+              "Id": "84776331-7f27-4814-9623-7e4d6d473392"
+            }
+          ],
+          "Tabs": [
+            {
+              "$id": "PersistentObjectAttributeTab:f5f6bfbc-8815-4e5e-8b21-35e228206a6c",
+              "Id": "f5f6bfbc-8815-4e5e-8b21-35e228206a6c"
+            }
+          ],
+          "Attributes": [
+            {
+              "$id": "PersistentObjectAttribute:f67a26be-c558-3c72-a77a-fc1d7ae086d5",
+              "Id": "f67a26be-c558-3c72-a77a-fc1d7ae086d5",
+              "Offset": 40,
+              "Rules": "Required",
+              "Name": "Discount",
+              "Label": {
+                "en": "Discount"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:Decimal"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:84776331-7f27-4814-9623-7e4d6d473392"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:f5f6bfbc-8815-4e5e-8b21-35e228206a6c"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:8064c590-585e-3ad2-895e-28c96d7ba9ea",
+              "Id": "8064c590-585e-3ad2-895e-28c96d7ba9ea",
+              "Offset": 20,
+              "Rules": "Required",
+              "Name": "PricePerUnit",
+              "Label": {
+                "en": "Price per unit"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:Decimal"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:84776331-7f27-4814-9623-7e4d6d473392"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:f5f6bfbc-8815-4e5e-8b21-35e228206a6c"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttributeWithReference:f3404267-8be0-3b75-b641-c283b41f32b2",
+              "$type": "Vidyano.Service.Repository.PersistentObjectAttributeWithReference, Vidyano.Service",
+              "DisplayAttribute": "Name",
+              "LookupId": "7c4fdac5-34b3-48e2-a442-48d6fac245e7",
+              "Id": "f3404267-8be0-3b75-b641-c283b41f32b2",
+              "Offset": 50,
+              "Rules": "Required",
+              "Name": "Product",
+              "Label": {
+                "en": "Product"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:Reference"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:84776331-7f27-4814-9623-7e4d6d473392"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:f5f6bfbc-8815-4e5e-8b21-35e228206a6c"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:93c4f5d5-0dd0-32a5-8fd5-c3b88f400b10",
+              "Id": "93c4f5d5-0dd0-32a5-8fd5-c3b88f400b10",
+              "Offset": 10,
+              "Rules": "NotEmpty",
+              "Name": "ProductName",
+              "Label": {
+                "en": "Product name"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:84776331-7f27-4814-9623-7e4d6d473392"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:f5f6bfbc-8815-4e5e-8b21-35e228206a6c"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:fa07b9cc-8a4a-3b07-b4cb-5378981bf8c3",
+              "Id": "fa07b9cc-8a4a-3b07-b4cb-5378981bf8c3",
+              "Offset": 30,
+              "Rules": "Required",
+              "Name": "Quantity",
+              "Label": {
+                "en": "Quantity"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:Int32"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:84776331-7f27-4814-9623-7e4d6d473392"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:f5f6bfbc-8815-4e5e-8b21-35e228206a6c"
               }
             }
           ],
@@ -1518,6 +1663,7 @@
               "LookupId": "228beb4e-0969-4eb4-a546-b4df7f297fe5",
               "Id": "29f3527c-7710-3527-b4e1-85054cc64d69",
               "Offset": 90,
+              "Rules": "Required",
               "Name": "Category",
               "Label": {
                 "en": "Category"
@@ -1646,6 +1792,7 @@
               "LookupId": "310b02ca-4213-4a51-ad8d-d527a8fe0698",
               "Id": "57ec46c6-1ac5-3e37-9cff-b76d399e36a7",
               "Offset": 80,
+              "Rules": "Required",
               "Name": "Supplier",
               "Label": {
                 "en": "Supplier"
@@ -1799,7 +1946,9 @@
               }
             }
           ],
-          "Queries": []
+          "Queries": [
+            "de0262eb-4b5b-44ac-aa70-c6a4eeadd22c"
+          ]
         },
         "8aa3fff0-1ce8-39b4-9d15-17ea025d5147": {
           "$id": "PersistentObject:8aa3fff0-1ce8-39b4-9d15-17ea025d5147",
@@ -2019,6 +2168,72 @@
           ],
           "Queries": []
         },
+        "ba9bd2af-07b9-3bb1-a120-cc849c833282": {
+          "$id": "PersistentObject:ba9bd2af-07b9-3bb1-a120-cc849c833282",
+          "SchemaName": "VidyanoRavenSample",
+          "Type": "Territory",
+          "Salt": "ehdo3ZsnY03-v-YApVDWTN9c5KJ0EAVxp-rnjmz4plVaSWdAiOb6fw",
+          "Label": {
+            "en": "Territory"
+          },
+          "Groups": [
+            {
+              "$id": "PersistentObjectAttributeGroup:09218ecc-785c-4a71-8417-44278e7f3079",
+              "Id": "09218ecc-785c-4a71-8417-44278e7f3079"
+            }
+          ],
+          "Tabs": [
+            {
+              "$id": "PersistentObjectAttributeTab:2b515581-a747-4208-a1bf-411a103dafa3",
+              "Id": "2b515581-a747-4208-a1bf-411a103dafa3"
+            }
+          ],
+          "Attributes": [
+            {
+              "$id": "PersistentObjectAttribute:2be6bdd3-3095-3b73-ac71-c950782b9d87",
+              "Id": "2be6bdd3-3095-3b73-ac71-c950782b9d87",
+              "Offset": 10,
+              "Rules": "NotEmpty",
+              "Name": "Code",
+              "Label": {
+                "en": "Code"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:09218ecc-785c-4a71-8417-44278e7f3079"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:2b515581-a747-4208-a1bf-411a103dafa3"
+              }
+            },
+            {
+              "$id": "PersistentObjectAttribute:172c32fd-ff07-3cea-9346-7f851ac41681",
+              "Id": "172c32fd-ff07-3cea-9346-7f851ac41681",
+              "Offset": 20,
+              "Rules": "NotEmpty",
+              "Name": "Name",
+              "Label": {
+                "en": "Name"
+              },
+              "Visibility": 7,
+              "ColumnSpan": 1,
+              "DataType": {
+                "$ref": "DataType:String"
+              },
+              "Group": {
+                "$ref": "PersistentObjectAttributeGroup:09218ecc-785c-4a71-8417-44278e7f3079"
+              },
+              "Tab": {
+                "$ref": "PersistentObjectAttributeTab:2b515581-a747-4208-a1bf-411a103dafa3"
+              }
+            }
+          ],
+          "Queries": []
+        },
         "39d42285-eacc-3456-b5a5-e43058c938a1": {
           "$id": "PersistentObject:39d42285-eacc-3456-b5a5-e43058c938a1",
           "SchemaName": "VidyanoRavenSample",
@@ -2113,6 +2328,7 @@
               "$id": "PersistentObjectAttribute:4a3d7d62-4f2c-3104-a480-419339d66350",
               "Id": "4a3d7d62-4f2c-3104-a480-419339d66350",
               "Offset": 10,
+              "Rules": "NotEmpty",
               "Name": "CompanyName",
               "Label": {
                 "en": "Company name"
@@ -2197,6 +2413,20 @@
         }
       },
       "Queries": {
+        "1a54a657-9267-424f-a0d7-8106589a180c": {
+          "$id": "Query:1a54a657-9267-424f-a0d7-8106589a180c",
+          "Offset": 10,
+          "Source": "Lines",
+          "AutoQuery": true,
+          "Name": "Order_Lines",
+          "Label": {
+            "en": "Lines"
+          },
+          "PersistentObject": {
+            "$ref": "PersistentObject:fadbbe2a-678a-3461-9a3d-982919c87acd"
+          },
+          "Columns": []
+        },
         "228beb4e-0969-4eb4-a546-b4df7f297fe5": {
           "$id": "Query:228beb4e-0969-4eb4-a546-b4df7f297fe5",
           "Source": "Database.Categories",
@@ -2314,6 +2544,20 @@
           },
           "Columns": []
         },
+        "de0262eb-4b5b-44ac-aa70-c6a4eeadd22c": {
+          "$id": "Query:de0262eb-4b5b-44ac-aa70-c6a4eeadd22c",
+          "Offset": 10,
+          "Source": "Territories",
+          "AutoQuery": true,
+          "Name": "Region_Territories",
+          "Label": {
+            "en": "Territories"
+          },
+          "PersistentObject": {
+            "$ref": "PersistentObject:ba9bd2af-07b9-3bb1-a120-cc849c833282"
+          },
+          "Columns": []
+        },
         "ea550568-bee1-457d-94f0-bba7500d67f9": {
           "$id": "Query:ea550568-bee1-457d-94f0-bba7500d67f9",
           "Source": "Database.VCompanies",
@@ -2426,7 +2670,7 @@
     }
   ],
   "Reports": [],
-  "ServiceVersion": "6.0.0-alpha",
-  "ModelHash": "LaUqdKLwrJeTxw3nBQlaDoh4pcgLvwmv8c4ofzxui8g=",
-  "SeederHash": "oihF/17Hwdfd14kOY+dzNUFpjJv6IVWJ9PKd3N3RQco="
+  "ServiceVersion": "6.0.20241218.5830+a173ea0.a173ea0fffb48237ad7620db6cbf63fa53705d5d",
+  "ModelHash": "P5Gu7Ks20VjhNtccKpYbf7JkVzR/SzHf1CMRYbo56jc=",
+  "SeederHash": "vohbJuVtMY4J2mqVVRaBt5ZfLnF0BTQ/B7bW0OzxwNI="
 }
