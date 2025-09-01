@@ -941,6 +941,12 @@
       },
       "IsSystem": true
     },
+    "Selected": {
+      "Value": {
+        "en": "{0} selected"
+      },
+      "IsSystem": true
+    },
     "SelectedObjectCouldNotBeFoundOnTheDatabase": {
       "Value": {
         "en": "The selected object for '{0}' could not be found in the database."
